@@ -1,38 +1,15 @@
 #include <iostream>
-#include <stdlib.h>
-#include <time.h>
 
 using namespace std;
 
 int main()
 {
-    int randNum,
-        userNum,
-        attempts;
+    int ab;
 
-    srand(time(NULL));
-    randNum = rand() % 100;
-
-    cout << "Vamos tentar a sorte! Digite seu número!" << endl;
-
-    tryAgain:
-    cin >> userNum;
-    attempts++;
-
-    if (userNum > randNum)
+    for (int i = 1; i <= 8; i++)
     {
-        cout << "Não foi dessa vez! Tente novamente com um número menor!" << endl;
-        goto tryAgain;
-
-    }
-    else if (userNum < randNum)
-    {
-        cout << "Não foi dessa vez! Tente novamente com um número maior!" << endl;
-        goto tryAgain;
-    }
-    else
-    {
-        cout << "Yeahhh você acertou, na " << attempts << "a tentativa!" << endl;
+        ab = ab + 5;
+        cout << "Usain Bolt está na " << i << "a volta e pagou um total de " << ab << " abdominais." << endl;
     }
 
     return 0;
