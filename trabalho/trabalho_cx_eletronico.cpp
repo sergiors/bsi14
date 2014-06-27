@@ -82,7 +82,6 @@ int main()
 
         // vars para controle de valores temporarios
         tmpValor,
-        tmpSaldo,
         tmpConta;
 
     // declara os valores iniciais das contas
